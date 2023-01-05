@@ -46,7 +46,7 @@ functions:
     iamRoleStatements:
       - Effect: "Allow"
         Action:
-          -"dynamodb:PutItem"
+          - "dynamodb:PutItem"
         Resource:
         - { "Fn::GetAtt": ["PostsTable", "Arn" ] }
   updatePost:
@@ -61,7 +61,7 @@ functions:
     iamRoleStatements:
       - Effect: "Allow"
         Action:
-          -"dynamodb:UpdateItem"
+          - "dynamodb:UpdateItem"
         Resource:
         - { "Fn::GetAtt": ["PostsTable", "Arn" ] }        
   deletePost:
@@ -76,7 +76,7 @@ functions:
     iamRoleStatements:
       - Effect: "Allow"
         Action:
-          -"dynamodb:DeleteItem"
+          - "dynamodb:DeleteItem"
         Resource:
         - { "Fn::GetAtt": ["PostsTable", "Arn" ] }
 
